@@ -1,0 +1,27 @@
+.cell {
+    background-color: #f0f0f0;
+    border: 2px solid #444;
+    padding: 20px;
+    font-size: 35px;
+    height: 25vmin;
+    text-align: center;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .cell:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .playable {
+    background-color: #d6eaf8;
+    cursor: pointer;
+  }
+  
+  .playable:hover {
+    background-color: #aed6f1;
+    transform: scale(1.05);
+  }

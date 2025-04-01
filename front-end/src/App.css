@@ -1,8 +1,12 @@
 #board {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px
+  background-color: #3498db;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 80vmin;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .cell {
@@ -16,25 +20,51 @@
 
 #bottombar {
   height: 5vh;
+  max-width: 80vmin;
+  margin: 0 auto;
 }
 
 #instructions {
   height: 5vh;
-  background-color: white;
-  padding: 0px;
-  margin: 0px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  margin: 15px auto;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  max-width: 80vmin;
+  font-weight: bold;
+  color: #2c3e50;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 #bottombar button {
   width: 50%;
   /* height: 100%; */
   margin: 0;
-  padding: 0;
+  padding: 12px 0;
   position: relative;
   float: left;
-  font-size: 2vw
+  font-size: 1.5vw;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#bottombar button:first-child {
+  border-radius: 0 0 0 8px;
+}
+
+#bottombar button:last-child {
+  border-radius: 0 0 8px 0;
+}
+
+#bottombar button:hover {
+  background-color: #3498db;
 }
 
 html,
@@ -42,6 +72,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ecf0f1;
 }
 
 .playable { background-color: red;}
